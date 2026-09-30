@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9</LangVersion>
+    <Version>3.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="$(BepInExAssemblyPath)\0Harmony.dll" Private="false" />
+    <Reference Include="BepInEx" HintPath="$(BepInExAssemblyPath)\BepInEx.dll" Private="false" />
+    <Reference Include="Assembly-CSharp" HintPath="$(GameAssemblyPath)\Assembly-CSharp.dll" Publicize="true" Private="false" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(GameAssemblyPath)\Newtonsoft.Json.dll" Private="false" />
+    <Reference Include="Photon3Unity3D" HintPath="$(GameAssemblyPath)\Photon3Unity3D.dll" Private="false" />
+    <Reference Include="PhotonRealtime" HintPath="$(GameAssemblyPath)\PhotonRealtime.dll" Private="false" />
+    <Reference Include="PhotonUnityNetworking" HintPath="$(GameAssemblyPath)\PhotonUnityNetworking.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(GameAssemblyPath)\UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(GameAssemblyPath)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.AssetBundleModule" HintPath="$(GameAssemblyPath)\UnityEngine.AssetBundleModule.dll" Private="false" />
+    <Reference Include="UnityEngine.PhysicsModule" HintPath="$(GameAssemblyPath)\UnityEngine.PhysicsModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ParticleSystemModule" HintPath="$(GameAssemblyPath)\UnityEngine.ParticleSystemModule.dll" Private="false" />
+    <Reference Include="UnityEngine.AudioModule" HintPath="$(GameAssemblyPath)\UnityEngine.AudioModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(GameAssemblyPath)\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(GameAssemblyPath)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="Unity.Collections" HintPath="$(GameAssemblyPath)\Unity.Collections.dll" Private="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

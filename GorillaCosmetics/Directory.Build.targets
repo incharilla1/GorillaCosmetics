@@ -1,0 +1,5 @@
+<Project>
+  <Target Name="CopyToPlugins" AfterTargets="Build" Condition="'$(DeployToGame)' == 'true'">
+    <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(PluginsPath)\$(ProjectName)\$(TargetFileName)" />
+  </Target>
+</Project>
