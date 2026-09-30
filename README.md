@@ -1,5 +1,7 @@
 # Gorilla Cosmetics
 
+[View original repo](https://github.com/legoandmars/GorillaCosmetics)
+
 Custom hats and materials for the current PC version of Gorilla Tag.
 
 ## Installation
