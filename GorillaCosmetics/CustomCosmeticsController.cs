@@ -84,6 +84,14 @@ namespace GorillaCosmetics
                 ResetMaterial();
                 CurrentMaterial = cosmetic;
                 material = cosmetic.GetMaterial();
+                if (rig.isOfflineVRRig)
+                {
+                    Material bodyMaterial = rig.bodyRenderer.myDefaultSkinMaterialInstance;
+                    material.shader = bodyMaterial.shader;
+                    material.shaderKeywords = bodyMaterial.shaderKeywords;
+                    material.renderQueue = bodyMaterial.renderQueue;
+                    material.enableInstancing = bodyMaterial.enableInstancing;
+                }
                 SetColor(rig.playerColor.r, rig.playerColor.g, rig.playerColor.b);
             }
             ApplyMaterial();
