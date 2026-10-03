@@ -1,7 +1,9 @@
 # Gorilla Cosmetics
 
 ## Here is how it looks like:
-![Preview](PREVIEW.PNG)
+<p align="center">
+  <img src="PREVIEW.png" alt="Preview">
+</p>
 
 [View original repo](https://github.com/legoandmars/GorillaCosmetics)
 
