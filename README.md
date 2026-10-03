@@ -1,5 +1,8 @@
 # Gorilla Cosmetics
 
+## Here is how it looks like:
+![Preview](PREVIEW.PNG)
+
 [View original repo](https://github.com/legoandmars/GorillaCosmetics)
 
 Custom hats and materials for the current PC version of Gorilla Tag.
